@@ -32,9 +32,10 @@ input {
 }
 
 #content li{
-    background-color: cornsilk;
+    background: radial-gradient(circle, rgba(255,248,220,1) 60%, rgba(220,220,220) 100%);
     max-width: 400px;
     margin-left: 0px;
+    margin-top: 20px;
     padding: 30px;
 }
 
@@ -47,5 +48,5 @@ input {
 .results {
     font-size: 20;
     color: gray;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;    
 }
