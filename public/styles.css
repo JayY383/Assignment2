@@ -1,0 +1,52 @@
+body {
+    background-color: thistle;
+    color: black;
+    font-family: 'Itim', cursive;
+}
+
+.container {
+    margin: auto;
+}
+
+h1 {
+    text-decoration: underline;
+    font-size: 50;
+    margin-bottom: 40;
+}
+
+input {
+    height: 38px;
+    width: 400px;
+    display: inline-block;
+    font-size: 30;
+    border-style: solid;
+}
+
+#content ul {
+    max-width: 400px;
+    margin-left: 0px;
+    padding: 0px;
+    width: auto;
+    list-style: none;
+    display: block;
+}
+
+#content li{
+    background: radial-gradient(circle, rgba(255,248,220,1) 60%, rgba(220,220,220) 100%);
+    max-width: 400px;
+    margin-left: 0px;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.name {
+    font-size: 30;
+    color: black;
+    font-family: 'Itim', cursive;
+}
+
+.results {
+    font-size: 20;
+    color: gray;
+    font-family: 'Open Sans Condensed', sans-serif;    
+}
