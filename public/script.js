@@ -24,7 +24,7 @@ const searchInput = document.querySelector('.search');
 function displayMatches(){
     $('#content').empty();
     $('#content').append(`<ul class="results"></ul>`);
-    const matchArray = findMatch(this.value, restaurants);
+    const matchArray = findMatches(this.value, restaurants);
     const html = matchArray.map(place => {
         return `
         <li>
