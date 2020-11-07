@@ -5,7 +5,7 @@ fetch('/api',{
     headers: {
         'Content-Type': 'application/json'
     }
-});
+})
     .then((fromServer) => fromServer.json())
     .then((jsonFromServer) => restaurants.push(...jsonFromServer))
     .catch((err) => {
@@ -20,7 +20,10 @@ function findMatches(wordToMatch, resturants){
     });
 }
 
+const searchInput = document.querySelector('.search');
 function displayMatches(){
+    $('#content').empty();
+    $('#content').append(`<ul class="results"></ul>`);
     const matchArray = findMatch(this.value, restaurants);
     const html = matchArray.map(place => {
         return `
@@ -33,8 +36,6 @@ function displayMatches(){
         </li>
         `;
     }).join('');
+    $('.results').append(html);
 }
-
-const searchInput = document.querySelector('.search');
-
-searchInput.addEventListener('change', displayMatches);
+searchInput.addEventListener('input', displayMatches);
